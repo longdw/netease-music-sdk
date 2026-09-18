@@ -1,0 +1,62 @@
+[versions]
+agp = "7.4.2"
+kotlin = "1.9.20"
+
+coreKtx = "1.7.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.8.0"
+
+retrofit = "2.9.0"
+moshiKotlin = "1.13.0"
+loggingInterceptor = "4.9.0"
+
+mmkv = "2.0.0"
+timber = "5.0.1"
+rxjava2 = "2.5.0"
+
+room = "2.5.0"
+zxing = "3.4.1"
+media3DatasourceOkhttp = "1.1.0"
+exoplayer = "1.1.1"
+lifecycleVersion = "2.5.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit"}
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+#使用moshi库来解析json
+converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+#moshi基于反射的json解析adapter
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshiKotlin" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
+
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+mmkv = { group = "com.tencent", name = "mmkv", version.ref = "mmkv" }
+adapter-rxjava2 = { group= "com.squareup.retrofit2", name = "adapter-rxjava2", version.ref = "rxjava2" }
+
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+zxing = { module = "com.google.zxing:core", version.ref = "zxing" }
+androidx-media3-datasource-okhttp = { group = "androidx.media3", name = "media3-datasource-okhttp", version.ref = "media3DatasourceOkhttp" }
+exoplayer = { module = "androidx.media3:media3-exoplayer", version.ref = "exoplayer" }
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleVersion" }
+
+[bundles]
+network = [ "retrofit", "converter-moshi", "moshi-kotlin", "logging-interceptor", "converter-gson" ]
+room = [ "room-runtime", "room-ktx" ]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LyricView">
+        <!-- 设置播放行的歌词字体颜色 -->
+        <attr name="lyricHighLightTextColor" format="color"/>
+        <!-- 设置默认歌词字体颜色 -->
+        <attr name="lyricNormalTextColor" format="color"/>
+        <!-- 设置歌词字体大小 -->
+        <attr name="lyricTextSize" format="dimension"/>
+        <!-- 设置播放歌词放大比例 -->
+        <attr name="lyricHighLightTextZoom" format="float"/>
+        <!-- 设置选中歌词字体颜色 -->
+        <attr name="lyricSelectedTextColor" format="color"/>
+        <!-- 设置时间线颜色 -->
+        <attr name="lyricTimeLineColor" format="color"/>
+        <!-- 设置时间线播放图标 -->
+        <attr name="lyricTimeLinePlayDrawable" format="reference"/>
+        <!-- 设置歌词阴影 -->
+        <attr name="lyricShadow" format="boolean"/>
+        <attr name="lyricShadowColor" format="color"/>
+        <attr name="lyricShadowDx" format="float"/>
+        <attr name="lyricShadowDy" format="float"/>
+        <attr name="lyricShadowRadius" format="float"/>
+    </declare-styleable>
+</resources>
