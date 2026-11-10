@@ -59,7 +59,7 @@ object MusicQualityHelper {
             }
 
             musicQuality.vipType == VipType.BLACK_VIP && UserManager.isBlackVip() -> {
-                MusicQualityUtil.setQuality(musicQuality.value)
+                MusicQualityUtil.setPreferQuality(musicQuality.value)
                 PlayError.NONE
             }
 
